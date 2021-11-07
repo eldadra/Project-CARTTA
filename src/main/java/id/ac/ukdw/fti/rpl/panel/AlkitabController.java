@@ -99,7 +99,7 @@ public class AlkitabController implements Initializable {
         Database database = new Database();
         Connection conn = database.getConnection();
 
-        String query =  "SELECT books.bookName, verses.osisRef, verses.verseText FROM books INNER JOIN verses ON books.osisName = verses.book";
+        String query =  "SELECT books.bookName, verses.osisRef, verses.verseText FROM books INNER JOIN verses ON books.osisName = verses.book ORDER BY verses.verseID";
 
         try {
             Statement statement = conn.createStatement();
