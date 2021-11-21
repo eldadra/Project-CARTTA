@@ -11,7 +11,7 @@
 <AnchorPane fx:id="mainPane" prefHeight="558.0" prefWidth="692.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.ukdw.fti.rpl.panel.PencarianTokohController">
    <children>
       <Button fx:id="buttonCariTokoh" layoutX="385.0" layoutY="118.0" mnemonicParsing="false" onAction="#cariTokoh" prefHeight="26.0" prefWidth="76.0" text="Cari Tokoh" />
-      <Button fx:id="buttonHome" layoutX="322.0" layoutY="482.0" mnemonicParsing="false" onAction="#goHome" text="Home" />
+      <Button fx:id="buttonHome" layoutX="322.0" layoutY="482.0" mnemonicParsing="false" onAction="#goHome" stylesheets="@styles/button.css" text="Home" />
       <TableView fx:id="tableView" layoutX="230.0" layoutY="161.0" prefHeight="294.0" prefWidth="231.0">
         <columns>
           <TableColumn fx:id="columnTokoh" prefWidth="117.60004425048828" text="Nama Tokoh" />
@@ -19,9 +19,9 @@
         </columns>
       </TableView>
       <TextField fx:id="keywordTempat" layoutX="230.0" layoutY="118.0" prefHeight="26.0" prefWidth="149.0" promptText="Keyword tempat .." />
-      <Text layoutX="254.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARI TOKOH">
+      <Text layoutX="245.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARI TOKOH">
          <font>
-            <Font size="32.0" />
+            <Font name="Century Gothic" size="33.0" />
          </font>
       </Text>
    </children>

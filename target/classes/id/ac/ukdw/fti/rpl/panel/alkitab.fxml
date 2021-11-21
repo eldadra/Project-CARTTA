@@ -10,12 +10,7 @@
 
 <AnchorPane fx:id="mainPane" prefHeight="558.0" prefWidth="692.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.ukdw.fti.rpl.panel.AlkitabController">
    <children>
-      <Text layoutX="286.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALKITAB">
-         <font>
-            <Font size="32.0" />
-         </font>
-      </Text>
-      <Button fx:id="buttonHome" layoutX="321.0" layoutY="509.0" mnemonicParsing="false" onAction="#goHome" text="Home" />
+      <Button fx:id="buttonHome" layoutX="321.0" layoutY="507.0" mnemonicParsing="false" onAction="#goHome" style="-fx-background-radius: 10px;" stylesheets="@styles/button.css" text="Home" AnchorPane.leftAnchor="321.0" />
       <TableView fx:id="tableView" layoutX="15.0" layoutY="201.0" prefHeight="300.0" prefWidth="578.0">
         <columns>
           <TableColumn fx:id="columnKitab" prefWidth="120.0000057220459" text="Kitab" />
@@ -24,6 +19,11 @@
         </columns>
       </TableView>
       <TextField fx:id="filterText" layoutX="15.0" layoutY="161.0" prefHeight="26.0" prefWidth="578.0" promptText="Cari kitab ..." />
-      <Button fx:id="viewDetails" layoutX="605.0" layoutY="267.0" mnemonicParsing="false" onAction="#viewDetails" prefHeight="66.0" prefWidth="77.0" text="Details" />
+      <Button fx:id="viewDetails" layoutX="605.0" layoutY="267.0" mnemonicParsing="false" onAction="#viewDetails" prefHeight="66.0" prefWidth="77.0" stylesheets="@styles/button.css" text="Details" />
+      <Text layoutX="286.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALKITAB">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

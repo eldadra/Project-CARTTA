@@ -14,14 +14,14 @@
             <Font size="32.0" />
          </font>
       </Text>
-      <Button fx:id="buttonCariTokoh" layoutX="152.0" layoutY="334.0" mnemonicParsing="false" onAction="#cariTokoh" prefHeight="26.0" prefWidth="81.0" text="Cari Tokoh" />
-      <Button fx:id="buttonCariTempat" layoutX="465.0" layoutY="334.0" mnemonicParsing="false" onAction="#cariTempat" text="Cari Tempat" />
+      <Button fx:id="buttonCariTokoh" layoutX="130.0" layoutY="336.0" mnemonicParsing="false" onAction="#cariTokoh" prefHeight="26.0" prefWidth="118.0" stylesheets="@styles/button.css" text="Cari Tokoh" />
+      <Button fx:id="buttonCariTempat" layoutX="443.0" layoutY="336.0" mnemonicParsing="false" onAction="#cariTempat" prefHeight="26.0" prefWidth="118.0" stylesheets="@styles/button.css" text="Cari Tempat" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="271.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@search.png" />
          </image>
       </ImageView>
-      <Button fx:id="buttonHome" layoutX="321.0" layoutY="459.0" mnemonicParsing="false" onAction="#goHome" text="Home" />
-      <Button fx:id="kitabButton" layoutX="305.0" layoutY="334.0" mnemonicParsing="false" onAction="#alkitab" prefHeight="26.0" prefWidth="81.0" text="Kitab" />
+      <Button fx:id="buttonHome" layoutX="283.0" layoutY="455.0" mnemonicParsing="false" onAction="#goHome" prefHeight="26.0" prefWidth="118.0" stylesheets="@styles/button.css" text="Home" />
+      <Button fx:id="kitabButton" layoutX="283.0" layoutY="336.0" mnemonicParsing="false" onAction="#alkitab" prefHeight="26.0" prefWidth="118.0" stylesheets="@styles/button.css" text="Kitab" />
    </children>
 </AnchorPane>
