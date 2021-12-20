@@ -32,8 +32,9 @@ public class MenuPencarianController {
     }
 
     @FXML
-    void cariTempat(ActionEvent event) {
-
+    void cariTempat(ActionEvent event) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("pencarianTempat.fxml"));
+        mainPane.getChildren().setAll(pane);
     }
 
     @FXML

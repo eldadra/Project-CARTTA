@@ -142,6 +142,7 @@ public class AlkitabController implements Initializable {
             tableView.setItems(sortedData);
         } catch (Exception e) {
             //TODO: handle exception
+            e.printStackTrace();
         }
     }
 

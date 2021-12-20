@@ -15,7 +15,7 @@ public class Database {
             return connection;
         } catch (Exception e) {
             //TODO: handle exception
-            System.out.println("err 1");
+            System.out.println(e.getMessage());
             return null;
         }
     }

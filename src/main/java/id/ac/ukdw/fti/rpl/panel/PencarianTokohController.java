@@ -62,7 +62,6 @@ public class PencarianTokohController {
         Database database = new Database();
         Connection conn = database.getConnection();
         String keyword = keywordTempat.getText();
-        String asal = "Abronah";
         String query = "SELECT places.hasBeenHere FROM places WHERE places.displayTitle= '" + keyword +"'";
         
         Statement statement;
@@ -74,7 +73,6 @@ public class PencarianTokohController {
             People dataPeople;
             while (result.next()) {
                 String words[] = result.getString("hasBeenHere").split("\\,");
-                String people;
                 String newData;
                 for(String word:words) {
                     word = word.replaceAll("[^a-zA-Z]","");
@@ -87,6 +85,7 @@ public class PencarianTokohController {
             }
         } catch (Exception e) {
             //TODO: handle exception
+            e.printStackTrace();
         }
         return peopleList;
         
@@ -98,8 +97,4 @@ public class PencarianTokohController {
         // columnAyat.setCellValueFactory(new PropertyValueFactory<People,String>("verse"));
         tableView.setItems(list);
     }
-
-
-    
-
 }
