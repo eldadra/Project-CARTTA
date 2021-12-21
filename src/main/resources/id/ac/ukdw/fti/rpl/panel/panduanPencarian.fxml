@@ -16,12 +16,12 @@
             <Font size="32.0" />
          </font>
       </Text>
-      <TextArea editable="false" layoutX="10.0" layoutY="205.0" prefHeight="246.0" prefWidth="672.0" text="Pencarian Kitab : &#10;1. Pilih menu pencarian.&#10;2. Pada menu pencarian pilih kitab.&#10;3. Masukkan kitab yang akan dicari, misalnya Gen.1.2. Tabel akan menampilkan hasil yang dicari.&#10;4. Pilih details untuk melihat details dari kitab yang dicari.&#10;&#10;Pencarian tempat dan tokoh : &#10;Langkah dan Penjelasan&#10;1. Pilih menu pencarian.&#10;2. Pada menu pencarian pilih pencarian yang Anda ingingkan, jika Anda ingin mencari tokoh maka pilihlah cari tokoh,jika &#10;    Anda ingin mencari tempat maka pilihlan cari tempat. Anda akan dibawa ke halaman pencarian.">
+      <TextArea editable="false" layoutX="10.0" layoutY="205.0" prefHeight="246.0" prefWidth="672.0" text="Pencarian Kitab : &#10;1. Pilih menu pencarian.&#10;2. Pada menu pencarian pilih kitab.&#10;3. Masukkan kitab yang akan dicari, misalnya Gen.1.2. Tabel akan menampilkan hasil yang dicari.&#10;4. Pilih details untuk melihat details dari kitab yang dicari.&#10;&#10;Pencarian tempat dan tokoh : &#10;Langkah dan Penjelasan&#10;1. Pilih menu pencarian.&#10;2. Pada menu pencarian pilih pencarian yang Anda ingingkan, jika Anda ingin mencari tokoh maka pilihlah cari tokoh,jika &#10;    Anda ingin mencari tempat maka pilihlan cari tempat. Anda akan dibawa ke halaman pencarian.&#10;3, Untuk pencarian tokoh, masukkan keyword atau kata kunci tempat. Misalnya keyword Eden, maka akan menghasilkan&#10;    tokoh-tokoh yang pernah berada di Eden.&#10;4. Untuk pencarian tempat, masukkan nama orang yang ingin dicari.">
          <cursor>
             <Cursor fx:constant="NONE" />
          </cursor>
       </TextArea>
-      <Button fx:id="buttonHome" layoutX="321.0" layoutY="495.0" mnemonicParsing="false" onAction="#goHome" text="HOME" />
+      <Button fx:id="buttonHome" layoutX="321.0" layoutY="495.0" mnemonicParsing="false" onAction="#goHome" stylesheets="@styles/button.css" text="HOME" />
       <ImageView fitHeight="100.0" fitWidth="165.0" layoutX="271.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@search.png" />
